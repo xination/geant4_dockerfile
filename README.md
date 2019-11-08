@@ -4,10 +4,10 @@ geant4.10.05 based on Ubuntu 18.04
 **0 Get the Docker image from Dockerhub** <br>
 $ docker pull xination/geant4.10.05
 
-**1 Build the Docker image from Dockerfile**
-Download the files( Dockerfile and entry-point.sh)
-$ docker build -t __aName__ .
-will take a while to run
+**1 Build the Docker image from Dockerfile** <br>
+Download the files( Dockerfile and entry-point.sh) <br>
+$ docker build -t __aName__ . <br>
+will take a while to run 
 
 **2 run ** <br>
 docker run --rm -it \\<br>
