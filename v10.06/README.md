@@ -14,30 +14,31 @@ docker run --rm -it \\<br>
 --env="DISPLAY" \ <br>
 xination/geant4.10.06
 
+<p>
 note: -v mean to bind the volume. <br>
 the first is path in host, and the second is for the path inside container. <br>
 "rw" flag means read and write, <br>
 "--rm" option means when the process is done, remove the container.
 "-it" option means interactive mode. <br>
+</p>
 
-
-**2 RE-Build this Docker image** <br>
+**2 RE-Build this Docker image:** <br>
 use build_docker_image.sh <br>
 will take a while to run <br>
 
-**3 update this Docker image** <br>
-$ docker run -it -d xination/geant4.10.06
-  # -it for interactive 
-  # -d  for detach 
-
-$ docker ps -a 
- # copy the corresponding container id.
-
- docker exec -it <CONTAINER_ID> bash 
- # then do something you want ... 
- # and then exit when you all done. 
-
-$ docker commit <CONTAINER_ID> <NEW_IMAGENAME>:<tag>
+**3 update this Docker image:** <br>
+$ docker run -it -d xination/geant4.10.06 <br>
+  # -it for interactive <br>
+  # -d  for detach <br>
+<br>
+$ docker ps -a <br>
+ # copy the corresponding container id. <br>
+<br>
+ docker exec -it <CONTAINER_ID> bash <br>
+ # then do something you want ... <br>
+ # and then exit when you all done. <br>
+<br>
+$ docker commit <CONTAINER_ID> <NEW_IMAGENAME>:<tag> <br>
 
 
 
