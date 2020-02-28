@@ -1,3 +1,3 @@
 #!/bin/bash
-docker build -t geant_xination:v10.06.p01 . 
+docker build -t xination/geant4.10.06 .
 
