@@ -32,8 +32,10 @@ $ docker run -it -d xination/geant4.10.06 <br>
   # -it for interactive <br>
   # -d  for detach <br>
 </p>
-$ docker ps -a 
- # copy the corresponding container id. <br>
+<p>
+$ docker ps -a <br>
+ # copy the corresponding container id. 
+</p>
 <br>
  docker exec -it <CONTAINER_ID> bash <br>
  # then do something you want ... <br>
