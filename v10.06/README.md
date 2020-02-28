@@ -27,11 +27,12 @@ use build_docker_image.sh <br>
 will take a while to run <br>
 
 **3 update this Docker image:** <br>
+<p>
 $ docker run -it -d xination/geant4.10.06 <br>
   # -it for interactive <br>
   # -d  for detach <br>
-<br>
-$ docker ps -a <br>
+</p>
+$ docker ps -a 
  # copy the corresponding container id. <br>
 <br>
  docker exec -it <CONTAINER_ID> bash <br>
