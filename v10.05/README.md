@@ -7,6 +7,7 @@ $ docker pull xination/geant4.10.05
 **1 Build the Docker image from Dockerfile** <br>
 Download the files( Dockerfile and entry-point.sh) <br>
 $ docker build -t __aName__ . <br>
+eg. docker build -t geant4:a_test . <br>
 will take a while to run 
 
 **2 run ** <br>
@@ -21,7 +22,9 @@ note: -v mean to bind the volume. the first is path in host, and the second is f
 "rw" flag means read and write, <br>
 "ro" flag means read only (not in used). <br>
 "--rm" option means when the process is done, remove the container.
-"-it" option means interactive mode.
+"-it" option means interactive mode. <br>
 
+if you want to include the data, <br>
+just change the docker file: -DGEANT4_INSTALL_DATA=ON  
 --
 ref: https://github.com/wtakase/docker-geant4
